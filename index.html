@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Dólar p/ Real</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo"
+            alt=""> 
+        <br>
+        <br>
+
+        <h1 class="page-title mb-4">
+            Conversor de moedas
+            <br>
+            Dólar para Real
+        </h1>
+        
+        <form id="conversorForm">
+            <div class="form-floating mb-3">
+                <input type="number" class="form-control" step="0.01" id="valorEmDolar" placeholder="Digite o valor em dólar" required>
+                <label for="valorEmDolar">Valor em Dólar:</label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input type="number" class="form-control" step="0.01" id="cotacaoDoDolar" placeholder="Digite a cotação do dólar" required>
+                <label for="cotacaoDoDolar">Cotação em Dólar:</label>
+            </div>
+
+            <button type="button" class="btn btn-primary mt-2" onclick="calcularConversao()">Calcular Conversão</button> 
+            
+            <div id="resultado" class="mt-4"></div>
+        </form>
+    </div>
+
+
+    <a href="https://alura.com.br/" target="_blank">
+        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+        <!-- <img src="https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/Convers%C3%A3o+1.png"> -->
+    </a>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html>
